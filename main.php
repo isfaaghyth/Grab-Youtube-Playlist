@@ -5,7 +5,7 @@
 	if ($playlist) {
 		define("BASE_URL", "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=");
 		define("PLAYLIST_ID", $playlist);
-		define("API_KEY", "Developer Key");
+		define("API_KEY", "Developer Key"); //set API KEY mu disini
 
 		function printallpost($token = null){
 			$posts = json_decode(file_get_contents(BASE_URL . PLAYLIST_ID . "&key=" . API_KEY . $token), true);
