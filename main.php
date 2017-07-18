@@ -11,7 +11,8 @@
 			$posts = json_decode(file_get_contents(BASE_URL . PLAYLIST_ID . "&key=" . API_KEY . $token), true);
 			foreach($posts['items'] as $v) {
 				echo "https://www.youtube.com/watch?v=" . $v['snippet']['resourceId']['videoId']. "<br>";
-				//echo "<a href='http://downsub.com/index.php?title=".$v['snippet']['title']."&url=https://www.youtube.com/watch?v=".$v['snippet']['resourceId']['videoId']."'>".$v['snippet']['title']."</a> <br/>";
+				//versi json
+				//echo json_encode(array("id" => $v['snippet']['resourceId']['videoId']));
 			}
 			if(array_key_exists('nextPageToken', $posts)){
 				printallpost('&pageToken='. $posts['nextPageToken']);
