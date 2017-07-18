@@ -2,7 +2,7 @@
 Get videos from youtube playlist
 
 live demo:
-http://dev.daeng.id/ytsub.php?id={PLAYLIST_ID}
+http://dev.daeng.id/ytsub.php?id={PLAYLIST_ID} (deprecated)
 
 # License
 ```
